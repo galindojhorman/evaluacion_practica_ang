@@ -12,7 +12,7 @@ export class PlantService {
 
   constructor(private http: HttpClient) {}
 
-  getPlants(): Observable<Plant[]>{
+  getPlants(): Observable<Plant[]> {
     return this.http.get<Plant[]>(this.apiUrl);
   }
 }

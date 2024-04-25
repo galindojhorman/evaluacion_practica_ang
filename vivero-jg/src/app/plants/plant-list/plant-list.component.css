@@ -1,40 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap");
 
 .main-container {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10px;
-  }
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10px;
+}
 
 .title {
-    color: black;
-    font-size: 200%;
-    text-align: left;
-    font-family: 'Kaisei Decol', serif;
-    font-weight: bold;
+  color: black;
+  font-size: 200%;
+  text-align: left;
+  font-family: "Kaisei Decol", serif;
+  font-weight: bold;
 }
 
 .image {
-    width: 100%;
-    height: auto
+  width: 100%;
+  height: auto;
 }
 
 table thead tr th {
-    background-color: #333A40;
-    color: white;
+  background-color: #333a40;
+  color: white;
 }
-table {   
-    width: 66%;
-    margin-left: 15px ;
+table {
+  width: 66%;
+  margin-left: 15px;
 }
 
 .footer {
-    text-align: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: black;
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.p-compact {
+  margin-bottom: 0;
+  margin-top: 0;
 }

@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-12 text-center">
       <h1 class="title">Vivero el Otoño</h1>
-      <hr> 
-      <img class="image" src="assets/ilustraciones/banner.svg" alt="">
-      <hr> 
+      <hr />
+      <img class="image" src="assets/ilustraciones/banner.svg" alt="" />
+      <hr />
     </div>
     <table class="table">
-      <thead>  
+      <thead>
         <tr>
           <th scope="col">#</th>
           <th scope="col">Nombre Común</th>
@@ -17,15 +17,22 @@
       </thead>
       <tbody>
         <tr *ngFor="let plant of plants; index as i">
-          <th scope="row">{{i + 1}}</th>
-          <td>{{plant.nombre_comun}}</td>
-          <td>{{plant.tipo}}</td>
-          <td>{{plant.clima}}</td>
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ plant.nombre_comun }}</td>
+          <td>{{ plant.tipo }}</td>
+          <td>{{ plant.clima }}</td>
         </tr>
       </tbody>
     </table>
   </div>
+  <p class="p-compact">
+    Total de plantas de interior: {{ countPlantsByType("Interior") }}
+  </p>
+  <p class="p-compact">
+    Total de plantas de exterior: {{ countPlantsByType("Exterior") }}
+  </p>
   <div class="footer">
-    Contact us: +57 3102105253 - info&#64;viveroelotonio.com - &#64;viveroelotonio
-  </div>  
+    Contact us: +57 3102105253 - info&#64;viveroelotonio.com -
+    &#64;viveroelotonio
+  </div>
 </div>
