@@ -1,12 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { PlantListComponent } from './plants/plant-list/plant-list.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [AppComponent],
+      imports: [RouterTestingModule, HttpClientTestingModule],
+      declarations: [AppComponent, PlantListComponent],
+
     }),
   );
 
@@ -22,12 +25,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('vivero-jg');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'vivero-jg app is running!',
-    );
-  });
 });
